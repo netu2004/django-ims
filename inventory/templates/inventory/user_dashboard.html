@@ -1,0 +1,15 @@
+# user_dashboard.html
+{% extends 'inventory/base.html' %}
+{% block content %}
+
+<h2>User Dashboard</h2>
+<a class="btn btn-primary" href="/orders/new/">Place Order</a>
+<h4>Your Orders:</h4>
+<ul>
+    {% for order in orders %}
+        <li>{{ order.product.name }} - {{ order.quantity }} ({{ order.order_date }})</li>
+    {% empty %}
+        <li>No orders yet.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

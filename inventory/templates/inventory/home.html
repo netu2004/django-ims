@@ -1,0 +1,51 @@
+{% extends 'inventory/base.html' %}
+
+{% block content %}
+<div style="
+    color: white;
+    background-color: #705571e6;
+    padding: 30px 20px 50px 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;">
+
+    <div class="container text-center mt-5">
+        <h2>Welcome to Inventory Management System</h2>
+        <p style="font-style: italic; margin-top: 20px;">
+  🚀 Welcome to IMS – where "Inventory" is just a fancy word for “I Might’ve Stored-something”!<br>
+  Whether you’ve got 10 products or 10,000, IMS keeps track of everything... even that one pen you thought you lost in 2018. 😉<br>
+  Log in, take control, and remember – behind every great business is an even greater system that knows where all the *stuff* is.
+</p>
+
+        <p>Please choose an option below:</p>
+
+        <a href="{% url 'login' %}" class="btn animate-btn" 
+           style="background-color: #3f323fe6; color: white; margin: 0 10px;">
+            I am Registered (Login)
+        </a>
+
+        <a href="{% url 'register' %}" class="btn animate-btn delay" 
+           style="background-color: #3f323fe6; color: white; margin: 0 10px;">
+            New User (Register)
+        </a>
+    </div>
+</div>
+
+<style>
+    .animate-btn {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.8s forwards;
+    }
+    .delay {
+        animation-delay: 0.5s;
+    }
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+{% endblock %}

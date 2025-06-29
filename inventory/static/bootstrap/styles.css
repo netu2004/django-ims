@@ -1,0 +1,29 @@
+/* static/css/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e333a00; /* Light Blue */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background: rgb(140, 50, 50);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.dashboard-box {
+    background-color: #d62ba9; /* Light blue */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+

@@ -1,0 +1,6 @@
+<!-- inventory/templates/inventory/logout.html -->
+{% extends 'inventory/base.html' %}
+{% block content %}
+  <h2>You have been logged out.</h2>
+  <a href="{% url 'login' %}" class="btn btn-primary">Login again</a>
+{% endblock %}
